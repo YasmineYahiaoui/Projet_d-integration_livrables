@@ -1,0 +1,9 @@
+﻿<Application x:Class="application_bureau_yasmine_linda_hatim_sofiane.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:application_bureau_yasmine_linda_hatim_sofiane"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
