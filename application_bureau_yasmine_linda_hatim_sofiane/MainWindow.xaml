@@ -7,6 +7,55 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="107*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border CornerRadius="10 0 0 10">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#3AA9AD" Offset="0"/>
+                    <GradientStop Color="#FF3A51AD" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Canvas>
+
+                </Canvas>
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="S'inscrire" Style="{StaticResource titleText}"/>
+                    <TextBlock Text="Êtes-vous nouveau ? Créez un nouveau compte pour nous rejoindre." Style="{StaticResource normalText}" Opacity="0.8" Margin="20 30" />
+                    <Button Content="S'inscrire" Style="{StaticResource button}" Click="login_Click"  />
+                </StackPanel>
+
+            </Grid>
+
+
+        </Border>
+
+        <Border Background="#ffffff" Grid.Column="2" CornerRadius="0 10 10 0">
+            <StackPanel VerticalAlignment="Center" Orientation="Vertical">
+                <TextBlock Text="Se connecter à MRMS" Style="{StaticResource titleText}" Foreground="#FF708FE2" RenderTransformOrigin="0.507,-1.065" />
+
+
+                <Border Background="#ffffff" Grid.Column="1" CornerRadius="0 10 10 0">
+                    <StackPanel VerticalAlignment="Center">
+
+
+                        <Label Content="Nom d'utilisateur" Style="{StaticResource lbl}" />
+                        <TextBox x:Name="txtUser" Style="{StaticResource textBox}"/>
+                        <Label Content="Mot de passe" Style="{StaticResource lbl}"/>
+                        <PasswordBox x:Name="txtPassword" Style="{StaticResource PasswordBox}"/>
+                        <Button Content="Se connecter" Margin="0 20 0 0" x:Name="Login" Click="Connecter_Click" Style="{StaticResource mainbutton}" Background="#FF5A72D1"/>
+                        <Label Content="" x:Name="infos" Foreground="Red" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+
     </Grid>
 </Window>
