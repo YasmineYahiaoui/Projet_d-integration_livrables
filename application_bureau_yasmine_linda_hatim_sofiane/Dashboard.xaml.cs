@@ -22,7 +22,9 @@ namespace application_bureau_yasmine_linda_hatim_sofiane
     {
         public Dashboard()
         {
-            InitializeComponent();
+            //test//
         }
     }
+    
+
 }
