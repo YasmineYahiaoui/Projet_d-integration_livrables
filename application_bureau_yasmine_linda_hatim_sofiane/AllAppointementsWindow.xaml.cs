@@ -10,23 +10,15 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace application_bureau_yasmine_linda_hatim_sofiane
 {
     /// <summary>
-    /// Logique d'interaction pour Dashboard.xaml
+    /// Logique d'interaction pour AllAppointementsWindow.xaml
     /// </summary>
-    public partial class Dashboard : UserControl
+    public partial class AllAppointmentsWindow : Window
     {
-        public Dashboard()
-        {
-            InitializeComponent();
-            
-        }
 
-       
     }
-
 }

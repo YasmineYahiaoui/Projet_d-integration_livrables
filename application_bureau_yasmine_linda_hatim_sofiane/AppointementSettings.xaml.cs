@@ -16,13 +16,28 @@ using System.Windows.Shapes;
 namespace application_bureau_yasmine_linda_hatim_sofiane
 {
     /// <summary>
-    /// Logique d'interaction pour AppointmentSettingsPage.xaml
+    /// Logique d'interaction pour AppointementSettings.xaml
     /// </summary>
-    public partial class AppointmentSettingsPage : Page
+    public partial class AppointmentSettingsPage : UserControl
     {
+
         public AppointmentSettingsPage()
         {
-            InitializeComponent();
+            
+            LoadClients();
         }
+
+        private void LoadClients()
+        {
+           
+        } 
+
+       private void SaveButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+
+        }   
+
     }
 }
