@@ -18,11 +18,14 @@ namespace application_bureau_yasmine_linda_hatim_sofiane
     /// <summary>
     /// Logique d'interaction pour PatientSettingsPage.xaml
     /// </summary>
-    public partial class PatientSettingsPage : Page
+    public partial class PatientSettingsPage : UserControl
     {
         public PatientSettingsPage()
         {
             InitializeComponent();
+          
         }
+
+        
     }
 }
