@@ -31,7 +31,7 @@ namespace GestionMedicale
         private void AddClientButton_Click(object sender, RoutedEventArgs e)
         {
             var client = new Client
-            {
+            {       
                 FirstName = FirstNameTextBox.Text,
                 LastName = LastNameTextBox.Text,
                 Email = EmailTextBox.Text,
@@ -43,7 +43,7 @@ namespace GestionMedicale
             using (var context = new MyDbContext())
             {
                 context.Clients.Add(client); // Ajoute le client à la table Clients  
-                context.SaveChanges(); // Sauvegarde les modifications dans la base de données
+               // Sauvegarde les modifications dans la base de données
             }
 
             MessageBox.Show("Client added!");

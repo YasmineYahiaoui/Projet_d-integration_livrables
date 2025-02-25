@@ -9,37 +9,36 @@
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
     </Window.Resources>
-    <Grid Margin="10">
-        <StackPanel>
-            <Grid Margin="5">
-                <TextBox x:Name="FirstNameTextBox" />
-                <TextBlock Text="First Name" IsHitTestVisible="False" 
-                        Foreground="Gray" Margin="5,0,0,0"
-                        VerticalAlignment="Center" 
-                        Visibility="{Binding Text, ElementName=FirstNameTextBox, Converter={StaticResource BooleanToVisibilityConverter}}"/>
-            </Grid>
-            <Grid Margin="5">
-                <TextBox x:Name="LastNameTextBox" />
-                <TextBlock Text="Last Name" IsHitTestVisible="False" 
-                        Foreground="Gray" Margin="5,0,0,0"
-                        VerticalAlignment="Center" 
-                        Visibility="{Binding Text, ElementName=LastNameTextBox, Converter={StaticResource BooleanToVisibilityConverter}}"/>
-            </Grid>
-            <Grid Margin="5">
-                <TextBox x:Name="EmailTextBox" />
-                <TextBlock Text="Email" IsHitTestVisible="False" 
-                        Foreground="Gray" Margin="5,0,0,0"
-                        VerticalAlignment="Center" 
-                        Visibility="{Binding Text, ElementName=EmailTextBox, Converter={StaticResource BooleanToVisibilityConverter}}"/>
-            </Grid>
-            <Grid Margin="5">
-                <TextBox x:Name="PhoneTextBox" />
-                <TextBlock Text="Phone Number" IsHitTestVisible="False" 
-                        Foreground="Gray" Margin="5,0,0,0"
-                        VerticalAlignment="Center" 
-                        Visibility="{Binding Text, ElementName=PhoneTextBox, Converter={StaticResource BooleanToVisibilityConverter}}"/>
-            </Grid>
-            <Button Content="Add Client" Width="100" Height="30" Margin="5" Click="AddClientButton_Click"/>
+    <Grid Margin="20">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+
+            <!-- Nom -->
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <TextBlock Text="Nom :" FontWeight="Bold" Width="120"/>
+                <TextBox x:Name="LastNameTextBox" Width="200" Height="30"/>
+            </StackPanel>
+
+            <!-- Prénom -->
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <TextBlock Text="Prénom :" FontWeight="Bold" Width="120"/>
+                <TextBox x:Name="FirstNameTextBox" Width="200" Height="30"/>
+            </StackPanel>
+
+            <!-- Email -->
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <TextBlock Text="Email :" FontWeight="Bold" Width="120"/>
+                <TextBox x:Name="EmailTextBox" Width="200" Height="30"/>
+            </StackPanel>
+
+            <!-- Numéro de téléphone -->
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,10">
+                <TextBlock Text="Téléphone :" FontWeight="Bold" Width="120"/>
+                <TextBox x:Name="PhoneTextBox" Width="200" Height="30"/>
+            </StackPanel>
+
+            <!-- Bouton Ajouter -->
+            <Button Content="Ajouter Client" Width="150" Height="40" Click="AddClientButton_Click"/>
+
         </StackPanel>
     </Grid>
 </Window>
