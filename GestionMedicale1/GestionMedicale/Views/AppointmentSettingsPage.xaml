@@ -27,7 +27,7 @@
                 </Border>
                 <Border Background="White" CornerRadius="8" Padding="10" Margin="10">
                     <StackPanel>
-                        <TextBlock Text="Date and Time" FontSize="16" Margin="0,0,0,10"/>
+                        <TextBlock Text="Date et heure" FontSize="16" Margin="0,0,0,10"/>
                         <DatePicker x:Name="AppointmentDatePicker" Margin="0,0,0,10"/>
                         <TextBox x:Name="AppointmentTimeTextBox" Text="HH:MM" Margin="0,0,0,10"/>
                     </StackPanel>
@@ -37,13 +37,13 @@
             <StackPanel Grid.Column="1" Margin="10">
                 <Border Background="White" CornerRadius="8" Padding="10" Margin="10">
                     <StackPanel>
-                        <TextBlock Text="Duration" FontSize="16" Margin="0,0,0,10"/>
-                        <TextBox x:Name="DurationTextBox" Text="Duration in minutes"/>
+                        <TextBlock Text="Durée" FontSize="16" Margin="0,0,0,10"/>
+                        <TextBox x:Name="DurationTextBox" Text=" Durée en minutes"/>
                     </StackPanel>
                 </Border>
-                <Button Content="Save" Width="150" Height="40" Background="#4DB6AC" Foreground="White" 
+                <Button Content="Enregistrer" Width="150" Height="40" Background="#4DB6AC" Foreground="White" 
                      HorizontalAlignment="Center" Margin="10" BorderThickness="0" Click="SaveButton_Click"/>
-                <Button Content="View All Appointments" Width="150" Height="40" Background="#4DB6AC" Foreground="White" 
+                <Button Content="Enregistrer" Width="150" Height="40" Background="#4DB6AC" Foreground="White" 
                      HorizontalAlignment="Center" Margin="10" BorderThickness="0" Click="ViewAllAppointmentsButton_Click"/>
             </StackPanel>
         </Grid>
