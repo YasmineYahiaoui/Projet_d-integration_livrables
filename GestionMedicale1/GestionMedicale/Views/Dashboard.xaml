@@ -12,7 +12,7 @@
                 <!-- Total Patients Card -->
                 <Border Background="#4DB6AC" CornerRadius="10" Width="200" Height="80" Margin="10">
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <TextBlock Text="Total Patients" Foreground="White" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="Nombre total de patients" Foreground="White" FontSize="16" HorizontalAlignment="Center"/>
                         <TextBlock x:Name="TotalPatientsTextBlock" Foreground="White" FontSize="24" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Border>
@@ -20,15 +20,15 @@
                 <!-- System Status Card -->
                 <Border Background="#4DB6AC" CornerRadius="10" Width="200" Height="80" Margin="10">
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                        <TextBlock Text="System Status" Foreground="White" FontSize="16" HorizontalAlignment="Center"/>
-                        <TextBlock Text="Online" Foreground="White" FontSize="24" HorizontalAlignment="Center"/>
+                        <TextBlock Text=" État du système" Foreground="White" FontSize="16" HorizontalAlignment="Center"/>
+                        <TextBlock Text="En ligne" Foreground="White" FontSize="24" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Border>
             </StackPanel>
             <!-- Add and Delete Client Buttons -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
-                <Button Content="Add Client" Width="150" Height="40" Margin="10" Click="AddClientButton_Click"/>
-                <Button Content="Delete Client" Width="150" Height="40" Margin="10" Click="DeleteClientButton_Click"/>
+                <Button Content="Ajouter un client" Width="150" Height="40" Margin="10" Click="AddClientButton_Click"/>
+                <Button Content="Supprimer un client" Width="150" Height="40" Margin="10" Click="DeleteClientButton_Click"/>
             </StackPanel>
         </StackPanel>
     </Grid>

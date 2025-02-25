@@ -43,7 +43,7 @@
                 </Border>
                 <Button Content="Enregistrer" Width="150" Height="40" Background="#4DB6AC" Foreground="White" 
                      HorizontalAlignment="Center" Margin="10" BorderThickness="0" Click="SaveButton_Click"/>
-                <Button Content="Enregistrer" Width="150" Height="40" Background="#4DB6AC" Foreground="White" 
+                <Button Content="Voir tous les rendez-vous" Width="150" Height="40" Background="#4DB6AC" Foreground="White" 
                      HorizontalAlignment="Center" Margin="10" BorderThickness="0" Click="ViewAllAppointmentsButton_Click"/>
             </StackPanel>
         </Grid>

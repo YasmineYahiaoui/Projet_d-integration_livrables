@@ -40,26 +40,26 @@
             <Border Background="#3AA9AD" Grid.Row="1" Grid.Column="0">
                 <StackPanel>
                     <Button x:Name="DashboardButton" 
-                          Content="Dashboard"
+                          Content="Tableau de bord"
                           Height="50"
                           Foreground="White"
                           FontSize="14"
                           Style="{StaticResource MenuButtonTheme}" Click="DashboardButton_Click" />
                     <Button x:Name="PatientManagementButton"
-                          Content="Patient Management"
+                          Content="Gestion des patients"
                           Height="50"
                           Foreground="White"
                           FontSize="14"
                           Style="{StaticResource MenuButtonTheme}" Click="PatientManagementButton_Click" />
                     <Button x:Name="PatientSettingsButton" 
-                          Content="Patient Settings"
+                          Content="Paramètres du patient"
                           Height="50"
                           Foreground="White"
                           FontSize="14"
                           Visibility="Collapsed"
                           Style="{StaticResource MenuButtonTheme}" Click="PatientSettingsButton_Click" />
                     <Button x:Name="AppointmentSettingsButton" 
-                          Content="Appointment Settings"
+                          Content="Paramètres des rendez-vous"
                           Height="50"
                           Foreground="White"
                           FontSize="14"
@@ -72,7 +72,7 @@
                           FontSize="14"
                           Style="{StaticResource MenuButtonTheme}" Click="FAQ_Click" />
                     <Button x:Name="LogoutButton"  
-                          Content="Logout"
+                          Content="Déconnexion"
                           Height="50"
                           Foreground="White"
                           FontSize="14"
