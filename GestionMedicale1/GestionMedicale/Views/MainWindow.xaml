@@ -27,9 +27,9 @@
 
                 </Canvas>
                 <StackPanel VerticalAlignment="Center">
-                    <TextBlock Text="Sign Up" Style="{StaticResource titleText}"/>
-                    <TextBlock Text="Are you new ? Create new account to connect us" Style="{StaticResource normalText}" Opacity="0.8" Margin="20 30" />
-                    <Button Content="Sign up" Style="{StaticResource button}" Click="login_Click"  />
+                    <TextBlock Text="  S'inscrire" Style="{StaticResource titleText}"/>
+                    <TextBlock Text="Vous êtes nouveau ? Créez un nouveau compte pour nous rejoindre" Style="{StaticResource normalText}" Opacity="0.8" Margin="20 30" />
+                    <Button Content="S'inscrire" Style="{StaticResource button}" Click="login_Click"  />
                 </StackPanel>
 
             </Grid>
@@ -46,11 +46,11 @@
                     <StackPanel VerticalAlignment="Center">
 
 
-                        <Label Content="Username" Style="{StaticResource lbl}" />
+                        <Label Content=" Nom d'utilisateur" Style="{StaticResource lbl}" />
                         <TextBox x:Name="txtUser" Style="{StaticResource textBox}"/>
-                        <Label Content="Password" Style="{StaticResource lbl}"/>
+                        <Label Content="Mot de passe" Style="{StaticResource lbl}"/>
                         <PasswordBox x:Name="txtPassword" Style="{StaticResource PasswordBox}"/>
-                        <Button Content="Login" Margin="0 20 0 0" x:Name="Login" Click="Connecter_Click" Style="{StaticResource mainbutton}"/>
+                        <Button Content="Connexion" Margin="0 20 0 0" x:Name="Login" Click="Connecter_Click" Style="{StaticResource mainbutton}"/>
                         <Label Content="" x:Name="infos" Foreground="Red" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </Border>
