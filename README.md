@@ -1,45 +1,117 @@
-# Système de Gestion des Dossiers Médicaux (MRMS)
+# MRMS - Medical Record Management System
 
-**MRMS** est un système de gestion des dossiers médicaux conçu pour répondre aux besoins des cliniques.  
-Il permet de gérer efficacement les patients, les médecins et les dossiers médicaux tout en offrant une interface utilisateur intuitive.
+## Introduction
+L'application **MRMS** (Medical Record Management System) est conçue pour faciliter la gestion des patients et des rendez-vous médicaux.
+
+### Types d'utilisateurs
+- **Administrateur** : Accès à toutes les fonctionnalités sauf la gestion des paramètres des patients.
+- **Médecin** : Accès à toutes les fonctionnalités y compris la gestion des paramètres des patients.
+
+---
+
+## Connexion
+
+### Étapes pour se connecter
+1. Accéder à la page de connexion.
+2. Saisir les informations d'identification :
+   - **Administrateur** : Nom d'utilisateur `admin` et mot de passe `mdp123`.
+   - **Médecin** : Nom d'utilisateur `medecin` et mot de passe `mdc123`.
+3. Si les identifiants sont corrects, l'utilisateur est redirigé vers le tableau de bord.
+4. En cas d'erreur, un message "Incorrect username or password" s'affiche.
 
 ---
 
-## Fonctionnalités principales
-
-### 🔐 Interface d'authentification
-- **Inscription (Sign Up)** : Permet aux utilisateurs de s'inscrire en fournissant leurs informations personnelles.
-- **Connexion (Sign In)** : Accès sécurisé pour les utilisateurs déjà enregistrés.
-
-### 🏥 Gestion des patients
-- **Ajout de patients** : Enregistrement des informations des patients.
-- **Suppression de patients** : Suppression sécurisée des dossiers.
-- **Mise à jour des informations** : Modification des informations d'un patient.
-- **Affichage des patients** : Liste des patients enregistrés avec leurs informations.
-
-### 📆 Gestion des rendez-vous
-- **Planification des rendez-vous** : Ajout de rendez-vous avec date, heure et médecin.
-- **Modification des rendez-vous** : Changement de l’horaire ou du médecin.
-- **Annulation des rendez-vous** : Suppression sécurisée d’un rendez-vous.
-- **Affichage de la liste des rendez-vous** : Vue détaillée des rendez-vous programmés.
-
-### 📝 Paramètres et préférences
-- **Paramètres des patients** : Configuration des préférences et du type de patient.
-- **Paramètres des rendez-vous** : Définition de la durée et notifications des rendez-vous.
-- **Préférences de contact** : Sélection des options de notification (E-mail, SMS, téléphone).
-- **Choix de la langue** : Interface disponible en **anglais et français**.
-
-### 📊 Tableau de bord (Dashboard)
-- **Vue globale des patients enregistrés.**
-- **État du système en temps réel (Online/Offline).**
-
-### ❓ FAQ et assistance
-- **Accès rapide aux questions fréquentes et assistance.**
-
-### 🚪 Déconnexion sécurisée
-- **Bouton de déconnexion pour quitter l’application en toute sécurité.**
+## Interface et Navigation
+L'interface principale contient un menu latéral avec les options suivantes :
+- **Tableau de bord** : Affiche les statistiques générales, ajout/suppression de clients.
+- **Gestion des patients** : Accessible selon le rôle utilisateur.
+- **Paramètres des rendez-vous** : Gestion des notifications et de la planification.
+- **FAQ** : Informations générales sur l'application.
+- **Déconnexion** : Quitter la session.
 
 ---
+
+## Fonctionnalités selon le rôle
+
+### Accès Administrateur
+- Accès au **Tableau de bord**.
+- Accès à **Gestion des patients** (uniquement pour la gestion des rendez-vous).
+- Accès aux **Paramètres des rendez-vous**.
+- Accès à la **FAQ**.
+- Possibilité d'ajouter des clients.
+
+### Accès Médecin
+- Accès au **Tableau de bord**.
+- Accès complet à la **Gestion des patients** (ajout/modification des informations médicales, contacts, type de patient, etc.).
+- Accès aux **Paramètres des rendez-vous**.
+- Accès à la **FAQ**.
+- Possibilité d'ajouter des clients.
+
+---
+
+## Gestion des Patients
+
+### Pour le Médecin
+1. Accéder à **Gestion des patients**.
+2. Modifier les informations des patients (type, contacts, notes médicales, etc.).
+3. Enregistrer les modifications.
+
+### Pour l'Administrateur
+1. Accéder à **Gestion des patients**.
+2. Gérer uniquement les rendez-vous.
+3. Planifier, modifier ou annuler un rendez-vous.
+
+---
+
+## Gestion des Rendez-vous
+1. Accéder aux **Paramètres des rendez-vous**.
+2. Sélectionner les notifications (Email, SMS).
+3. Choisir une date et une heure.
+4. Définir la durée du rendez-vous.
+5. Enregistrer les informations.
+6. Accéder à la liste des rendez-vous.
+
+---
+
+## FAQ et Assistance
+1. Accéder à la **FAQ** via le menu.
+2. Consulter les questions fréquentes.
+3. Soumettre une nouvelle question si nécessaire.
+
+---
+
+## Déconnexion
+1. Cliquer sur **Déconnexion** dans le menu latéral.
+2. L'utilisateur est redirigé vers la page de connexion.
+
+---
+
+## Base de Données et Backend
+
+### Technologie utilisée
+L'application **MRMS** utilise **SQLite** pour stocker les informations des patients, rendez-vous et utilisateurs.
+
+### Structure de la base de données
+La base de données est composée des tables suivantes :
+- **Clients** : Stocke les informations des patients (nom, prénom, email, téléphone, type, langue, etc.).
+- **Appointments** : Gère les rendez-vous programmés.
+- **Roles** : Définit les rôles (Administrateur, Médecin).
+- **Utilisateurs** : Stocke les identifiants et mots de passe des utilisateurs.
+
+### Consultation et Gestion des Données
+- Ajouter/modifier un patient.
+- Planifier et gérer les rendez-vous.
+- Gérer les rôles et utilisateurs.
+- Supprimer un client.
+
+---
+
+## Conclusion
+L'application **MRMS** permet une gestion efficace des patients et des rendez-vous. 
+- **Médecins** : Accès complet aux dossiers patients.
+- **Administrateurs** : Gestion des rendez-vous uniquement.
+
+Pour toute question ou assistance, consultez la **FAQ** ou contactez le support technique.
 
 ## Technologies utilisées
 - **Langage** : C#
