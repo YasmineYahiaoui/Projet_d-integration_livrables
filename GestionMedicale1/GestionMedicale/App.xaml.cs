@@ -17,7 +17,8 @@ namespace GestionMedicale
             base.OnStartup(e);
             using (var context = new MyDbContext())
             {
-             // Crée la base de données si elle n'existe pas
+                context.Database.EnsureCreated();  
+                                                   // Crée la base de données si elle n'existe pas
             }
         }
 
