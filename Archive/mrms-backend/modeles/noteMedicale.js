@@ -70,3 +70,4 @@ NoteMedicale.belongsTo(Utilisateur, { foreignKey: 'medecinId', as: 'medecin' });
 NoteMedicale.belongsTo(Client, { foreignKey: 'clientId', as: 'client' });
 
 module.exports = NoteMedicale;
+// test 
