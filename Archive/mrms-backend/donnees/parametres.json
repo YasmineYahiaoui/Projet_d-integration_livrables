@@ -1,0 +1,27 @@
+{
+  "application": {
+    "nomApplication": "MRMS",
+    "version": "1.0.0",
+    "theme": "clair",
+    "langueParDefaut": "Français"
+  },
+  "rendezvous": {
+    "heureDebut": "08:00",
+    "heureFin": "18:00",
+    "dureeParDefaut": 30,
+    "intervalleCreneaux": 30,
+    "joursOuvrables": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "notifications": {
+    "activerEmailsAutomatiques": true,
+    "activerSMSAutomatiques": false,
+    "emailExpediteur": "contact@mrms.com",
+    "delaiRappel": 24
+  }
+}

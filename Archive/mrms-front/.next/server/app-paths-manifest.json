@@ -1,0 +1,10 @@
+{
+  "/not-found": "app/not-found.js",
+  "/page": "app/page.js",
+  "/patient/connexion/page": "app/patient/connexion/page.js",
+  "/patient/tableau-bord/page": "app/patient/tableau-bord/page.js",
+  "/patient/profil/page": "app/patient/profil/page.js",
+  "/patient/dossier-medical/page": "app/patient/dossier-medical/page.js",
+  "/patient/rendez-vous/nouveau/page": "app/patient/rendez-vous/nouveau/page.js",
+  "/doctor/connexion/page": "app/doctor/connexion/page.js"
+}
