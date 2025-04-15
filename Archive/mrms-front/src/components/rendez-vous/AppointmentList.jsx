@@ -247,3 +247,4 @@ export default function AppointmentList({ rendezVous = [], pagination, onPageCha
         </div>
     );
 }
+/*Modification version 1.1.1 */
